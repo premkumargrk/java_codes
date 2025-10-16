@@ -26,7 +26,7 @@ public class Encap {
     Unit input= new Unit();
     input.setSerial(10010491);
     input.setProduct("Amul coco Bar");
-    long a=input.getSerial();
+    long a=input.get_Serial();
     String b=input.getProduct();
     System.out.println(+a+" : "+b);
  }   
