@@ -10,4 +10,5 @@ public class Array {
         int max=Arrays.stream(arr).max().getAsInt();
         System.out.println("max: "+max);
     }
+    
 }

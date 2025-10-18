@@ -4,7 +4,7 @@ public class Maths {
     public double square(double num){
         double result = num*num;
         System.out.println("Square of "+num+" : "+result);
-        return result;
+        return 1;
     }
     public double squareRoot(double num){
         if (num<0){
@@ -17,4 +17,5 @@ public class Maths {
             return result;
         }
     }
+   
 }

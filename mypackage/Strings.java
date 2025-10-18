@@ -9,3 +9,4 @@ public class Strings {
         System.out.println("uppercase: "+n.toUpperCase());
     }
 }
+

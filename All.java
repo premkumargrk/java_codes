@@ -1,6 +1,8 @@
 // import mypackage.others.Array;
 // import mypackage.Maths;
-import mypackage.*;
+import mypackage.Array;
+import mypackage.Strings;
+import mypackage.Maths;
 public class All {
     public static void main(String[] args) {
     Array arr=new Array();

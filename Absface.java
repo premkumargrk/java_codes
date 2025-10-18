@@ -1,5 +1,4 @@
 interface First{
-
     int A= 56;
     public void listen();
     public void write();
