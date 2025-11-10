@@ -1,7 +1,7 @@
 class MyThread extends Thread {
     public void run() {
         for (int i = 1; i <= 5; i++) {
-            System.out.println(Thread.currentThread().getName() + " - Count: " + i);
+            System.out.println(Thread.currentThread().getName() +"-->"+ i);
             try {
                 Thread.sleep(500); // Simulate some work
             } catch (InterruptedException e) {
@@ -20,7 +20,7 @@ public class Join {
 
         // Start first thread
         t1.start();
-
+        t1.setName("First_thread");
         try {
             // Wait for t1 to complete before starting t2
             t1.join();
@@ -30,7 +30,7 @@ public class Join {
 
         // Start second thread
         t2.start();
-
+        t2.setName("second_running_thread");
         try {
             // Wait for t2 to complete before starting t3
             t2.join();
@@ -40,7 +40,7 @@ public class Join {
 
         // Start third thread
         t3.start();
-
+        t3.setName("last_thread");
         try {
             // Wait for t3 to complete before finishing main thread
             t3.join();

@@ -8,7 +8,7 @@ class MyThread extends Thread {
             System.out.println(Thread.currentThread().getName() +
                                " (Priority: " + Thread.currentThread().getPriority() + ") - Count: " + i);
             try {
-                Thread.sleep(300);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -21,9 +21,9 @@ public class Preemptive {
         MyThread t1 = new MyThread("Low-Priority Thread");
         MyThread t2 = new MyThread("High-Priority Thread");
 
-        t1.setPriority(Thread.MIN_PRIORITY); // 1
-        t2.setPriority(Thread.MAX_PRIORITY); // 10
-
+        t1.setPriority(10); //1
+        t2.setPriority(2);  // 10
+                             
         t1.start();
         t2.start();
     }
