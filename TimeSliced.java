@@ -22,14 +22,17 @@ public class TimeSliced {
         TimeThread t3 = new TimeThread("Thread-3");
         TimeThread t4 = new TimeThread("Thread-4");
         // All have equal priority
-        t1.setPriority(4);
+        t1.setPriority(Thread.MAX_PRIORITY);
         t2.setPriority(3);
         t3.setPriority(1);
         t4.setPriority(2);
-
+        try{
         t1.start();
         t2.start();
         t3.start();
         t4.start();
+        } catch(IllegalThreadStateException e){
+            System.out.println("do not mention two times for same thread: "+e);
+        }
     }
 }
