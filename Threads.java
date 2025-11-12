@@ -10,6 +10,7 @@ class Two implements Runnable {  //implements runnable
     public void run(){
         for(int i=0;i<=50;i++){
             System.out.printf("the second value is: %d\n",i);
+            
         }
     }
 }
