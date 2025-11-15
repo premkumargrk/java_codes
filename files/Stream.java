@@ -85,9 +85,7 @@ public class Stream {
             Student s1 = new Student("Griot", 22, 88.5);
 
             // Writing object using ObjectOutputStream
-            ObjectOutputStream oos = new ObjectOutputStream(
-                    new FileOutputStream("studentData.obj")
-            );
+            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("studentData.obj"));
             oos.writeObject(s1);
             oos.close();
             System.out.println("\nObject Stream Writing Done.");
