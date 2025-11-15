@@ -1,0 +1,17 @@
+Hello, Java File Handling!
+This is a new line of text.
+This line is appended to the file.
+This line is appended to the file.
+This line is appended to the file.
+This line is appended to the file.
+This line is appended to the file.
+This line is appended to the file.
+This line is appended to the file.
+This line is appended to the file.
+This line is appended to the file.
+This line is appended to the file.
+This line is appended to the file.
+This line is appended to the file.
+This line is appended to the file.
+This line is appended to the file.
+This line is appended to the file.
